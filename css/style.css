@@ -417,7 +417,17 @@ body {
   position: relative;
 }
 
-.banner .banner-text {
+.banner.publications-banner .banner-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: white;
+  transform: translate(-50%,-50%);
+  width: 30%;
+  text-align: center;
+}
+
+.banner.home-banner .banner-text {
   position: absolute;
   top: 50%;
   left: 6.35vw;
@@ -516,7 +526,15 @@ body {
     position: relative;
   }
   
-  .banner .banner-text {
+  .banner.publications-banner .banner-text {
+    left: 6%;
+    top: 60%;
+    transform: translateY(-50%);
+    width: 88%;
+    text-align: left;
+  }
+  
+  .banner.home-banner .banner-text {
     top: auto;
     bottom: 80vw;
     left: 6%;
@@ -951,5 +969,206 @@ body {
     height: 323vw;
     object-fit: cover;
     object-position: center;
+  }
+}
+
+/* #Publications Body
+================================================== */
+.publications-body {
+  padding-top: 3.125vw;
+}
+
+.publications-body .container {
+  width: 86%;
+}
+
+.publications-body .heading {
+  width: 52vw;
+}
+
+.publications-body h1 {
+  line-height: 1.2;
+  margin: .5vw 0 3.65vw 0;
+}
+
+.publications-body .year {
+  width: 7.5vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 1.4vw 0;
+  border-radius: 1.5vw;
+  color: white;
+  margin-bottom: 2vw;
+}
+
+.publications-body .publications-group:not(:last-child) {
+  margin-bottom: 3.125vw;
+}
+
+@media (max-width: 1023.98px) {
+  .publications-body {
+    padding-top: 9.33vw;
+  }
+  
+  .publications-body .container {
+    width: 88%;
+  }
+  
+  .publications-body .heading {
+    width: 100%;
+  }
+  
+  .publications-body h1 {
+    margin: 1.33vw 0 5.33vw 0;
+  }
+  
+  .publications-body .year {
+    width: 19.2vw;
+    padding: 3.6vw 0;
+    border-radius: 3.33vw;
+    margin-bottom: 4vw;
+  }
+  
+  .publications-body .publications-group:not(:last-child) {
+    margin-bottom: 6.66vw;
+  }
+}
+
+/* #Posts Slider
+================================================== */
+.posts-slider {
+  padding: 7.8vw 0;
+  overflow: hidden;
+}
+
+.posts-slider .container {
+  width: 79%;
+}
+
+.posts-slider .swiper {
+  margin: 0 -1.5vw;
+}
+
+.posts-slider .swiper-slide {
+  padding: 0 1.5vw;
+}
+
+.posts-slider .post-card {
+  background-color: white;
+  border-radius: 2vw;
+  overflow: hidden;
+  box-shadow: 0 3px 20px #0073cb25;
+}
+
+.posts-slider .post-card-img,
+.posts-slider .post-card-img img {
+  width: 100%;
+}
+
+.posts-slider .post-card-img img {
+  height: 18.22vw;
+  object-fit: cover;
+  object-position: center;
+}
+
+.posts-slider .post-card-text {
+  padding: 1.3vw 2.85vw 3.38vw 2.85vw;
+}
+
+.posts-slider .post-card-text h2 {
+  margin-bottom: 1.5vw;
+}
+
+.posts-slider .post-card-text p {
+  display: flex;
+  align-items: center;
+}
+
+.posts-slider .post-card-text p .line {
+  display: block;
+  height: 1px;
+  width: 1.8vw;
+  background-color: #EA3D84;
+  margin-right: 1vw;
+}
+
+.posts-slider .swiper-arrows {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 9.47vw;
+  height: 4.68vw;
+  background-color: white;
+  z-index: 1;
+  margin: 4.16vw auto 0 auto;
+}
+
+.posts-slider .swiper-arrows img {
+  width: 1.5vw;
+}
+
+.posts-slider .swiper-arrows .prev {
+  margin-right: 2vw;
+}
+
+.posts-slider .swiper-arrows .prev,
+.posts-slider .swiper-arrows .next {
+  cursor: pointer;
+}
+
+@media (max-width: 1023.98px) {
+  .posts-slider {
+    padding: 20vw 0;
+    overflow: hidden;
+  }
+  
+  .posts-slider .container {
+    width: 88%;
+  }
+  
+  .posts-slider .swiper {
+    margin: 0 -6%;
+  }
+  
+  .posts-slider .swiper-slide {
+    padding: 0 6%;
+  }
+
+  .posts-slider .swiper-arrows {
+    width: 23.33vw;
+    height: 11.6vw;
+    margin-top: 10vw;
+  }
+
+  .posts-slider .post-card {
+    background-color: white;
+    border-radius: 6vw;
+  }
+  
+  .posts-slider .post-card-img img {
+    height: 30vw;
+  }
+  
+  .posts-slider .post-card-text {
+    padding: 5vw 7.33vw 5vw 7.33vw;
+  }
+  
+  .posts-slider .post-card-text h2 {
+    margin-bottom: 1vw;
+  }
+  
+  .posts-slider .post-card-text p .line {
+    width: 4.66vw;
+    margin-right: 2.66vw;
+  }
+  
+  .posts-slider .swiper-arrows img {
+    width: 3.7vw;
+  }
+  
+  .posts-slider .swiper-arrows .prev {
+    margin-right: 5.33vw;
   }
 }

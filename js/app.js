@@ -21,6 +21,27 @@ if (document.querySelector('.home-page .banner .swiper')) {
   });
 }
 
+/* #Posts Slider
+  ======================================================= */
+if (document.querySelector('.posts-slider .swiper')) {
+  new Swiper(".posts-slider .swiper", {
+    centeredSlides: true,
+    loop: true,
+    navigation: {
+      nextEl: ".posts-slider .next",
+      prevEl: ".posts-slider .prev",
+    },
+    breakpoints: {
+      0: {
+        slidesPerView: 1
+      },
+      1024: {
+        slidesPerView: 3
+      }
+    }
+  });
+}
+
 /* #Home About 2
   ======================================================= */
 if (document.querySelector('.home-about-2 .swiper')) {

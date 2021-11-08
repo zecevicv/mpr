@@ -418,7 +418,8 @@ body {
 }
 
 .banner.publications-banner .banner-text,
-.banner.research-banner .banner-text {
+.banner.research-banner .banner-text,
+.banner.people-banner .banner-text {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -528,7 +529,8 @@ body {
   }
   
   .banner.publications-banner .banner-text,
-  .banner.research-banner .banner-text {
+  .banner.research-banner .banner-text,
+  .banner.people-banner .banner-text {
     left: 6%;
     top: 60%;
     transform: translateY(-50%);
@@ -1268,5 +1270,105 @@ body {
     margin-bottom: 4.66vw;
     border-right: none;
     border-bottom: 1px solid transparent;
+  }
+}
+
+/* #People Body
+================================================== */
+.people-body {
+  padding: 3.125vw 0 7.3vw 0;
+}
+
+.people-body .container {
+  width: 60%;
+}
+
+.people-body .heading {
+  text-align: center;
+  padding: 0 4.75vw;
+  margin-bottom: 5.2vw;
+}
+
+.people-body h2 {
+  margin: .5vw 0 1.5vw 0;
+}
+
+.people-body .people-list ul {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -2.2vw;
+}
+
+.people-body .people-list li {
+  flex: 0 0 33.33333%;
+  padding: 0 2.2vw;
+  margin-bottom: 5.2vw;
+}
+
+.people-body .people-list li > div {
+  border-radius: 1vw;
+  overflow: hidden;
+  box-shadow: 0 12px 25px #3b447849;
+}
+
+.people-body .people-list img {
+  width: 100%;
+  height: 19.3vw;
+  object-fit: cover;
+  object-position: center;
+}
+
+.people-body .people-list .text {
+  text-align: center;
+  padding: .75vw 0 1vw 0;
+}
+
+.people-body .people-list h3 {
+  margin-bottom: .5vw;
+}
+
+@media (max-width: 1023.98px) {
+  .people-body {
+    padding: 8vw 0 16.13vw 0;
+  }
+  
+  .people-body .container {
+    width: 88%;
+  }
+  
+  .people-body .heading {
+    text-align: left;
+    padding: 0;
+    margin-bottom: 8.66vw;
+  }
+  
+  .people-body h2 {
+    margin: 1.5vw 0 4vw 0;
+  }
+  
+  .people-body .people-list ul {
+    margin: 0 -2vw;
+  }
+  
+  .people-body .people-list li {
+    flex: 0 0 50%;
+    padding: 0 2vw;
+    margin-bottom: 5.2vw;
+  }
+  
+  .people-body .people-list li > div {
+    border-radius: 2.6vw;
+  }
+  
+  .people-body .people-list img {
+    height: 49.33vw;
+  }
+  
+  .people-body .people-list .text {
+    padding: 2vw 0 2.66vw 0;
+  }
+  
+  .people-body .people-list h3 {
+    margin-bottom: .5vw;
   }
 }
